@@ -30,6 +30,22 @@
   4. 文档对象模型（DOM）
   ---
     + 文档对象模型（DOM，document object model）是针对XML但经过扩展用于HTML的应用程序编程接口（API，application Programming InterFace）。DOM把整个页面映射为一个多层节点的结构。HTML或XML页面中的每个组成部分都是某种类型的节点，这些节点又包含着不同类型的数据。
+    + 使用DOM的原因： Internet Explorer 4 ֖ Netscape Navigator 4 分别支持不同形式的 DHTML ，没有统一标准。此时，w3c开始着手规划DOM。
+    + DOM级别  DOM1级--1998.10---DOM核心 和 DOM HTML；DOM核心：规定的是如何映射基于XML的文档结构，以便简化对文档中任意部分的访问和操作。DOM HTML模块则在DOM核心的基础上加以扩展，添加了针对HTML的对象和方法。
+    + 注意： DOM并不是只是针对javascript的，很多语言也都实现了DOM。不过，在web浏览器中，基于ECMAScript实现的DOM的确已经成为了javascript这门语言的一个重要组成部分。
+    + DOM2级：  在DOM1的基础上又扩展了（DHTML一直都支持的）鼠标和用户界面事件，范围，遍历，（迭代DOM文档的方法）等细节模块，而且同构对象接口增加了对css的支持。DOM1级中的DOM核心模块也经过扩展开始支持XML命名空间。DOM2级引入了下列新模块，也给出了众多新类型和新接口定义：
+      * DOM视图（DOM views）：定义了跟踪不同文档（例如，应用css之前和之后的文档），视图的接口
+      * DOM事件（DOM Events）：定义了基于css为元素应用样式的接口
+      * DOM遍历和范围（DOM Traversal and Rangle）：定义了遍历和操作文档树的接口
+    + DOM3 级则进一步扩展了DOM，引入了统一方法加载和保存文档的方法-在DOM加载和保存（DOM Load and Save）模块中定义；新增了验证文档方法-在DOM验证（DOM Validation） 模块中定义。DOM3级也对DOM核心进行了扩展。开始支持XML1.0规范，涉及XML Infoset，XPath和XML Base。
+    + 注意了： 在阅读DOM标准的时候，读者可能会看到DOM0级（DOM Level 0）的字眼。实际上，DOM0级标准是是不存在的；所谓DOM0级只是DOM历史坐标中的一个参照点而已。具体说来，DOM0级指的是Internet Explorer 4.0和Netscape Navigator 4.0 最初支持的DHTML；
+    + 其他DOM标准： 除了DOM核心和DOM HTML接口之外，另外几种语言还发布了只针对自己的DOM标准。下面列出的语言都是基于XML的，每种语言的DOM标准都添加了与特定语言相关的新方法和新接口。
+      * SVG（Scalable Vector Graphic可伸缩矢量图）1.0；
+      * MatnML（Mathematical Markup Language，数学标记语言）1.0；
+      * SMIL（Synchronized Multimedia Integration Lanuage，同步多媒体集成语言）
+      * 还有一些语言也开发了自己的DOM实现，例如Mozilla 的XUL（XML User Interface Lanuage ，XML用户界面语言）但是，只有上面列出的几种语言是W3C推荐的标准。
+    + web浏览器对DOM的支持
+    
     
     
 
