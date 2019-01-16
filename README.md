@@ -6,7 +6,7 @@
       + 核心（ECMAScript）
       + 文档对象模型（DOM）
       + 浏览器对象模型（BOM）
-  2. ECMAScript 
+  2.  ECMAScript 
     + 由ECMA-262定义的ECMAScript与web浏览器没有依赖关系。实际上这门语言本身不包含输入输出的定义。ECMA-262定义的只是这门语言的基础，而在此基础之上可以构建更完善的脚本语言。我们常见的web浏览器只是ECMAScript实现可能的宿主环境之一。宿主环境不仅提供基本的ECMAScript实现，同时也提供该语言的扩展，以便语言与环境之间对接交互。而这些扩展——如DOM，则利用ECMAScript的核心类型和语法提供更多更具体的功能，以便实现针对环境的操作。其他宿主环境包括node和Adobe Flash。ECMA-262包含内容
     + 语法
     + 类型
