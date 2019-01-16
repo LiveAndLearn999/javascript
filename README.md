@@ -7,22 +7,22 @@
       + 文档对象模型（DOM）
       + 浏览器对象模型（BOM）
   2. ECMAScript 
-    * 由ECMA-262定义的ECMAScript与web浏览器没有依赖关系。实际上这门语言本身不包含输入输出的定义。ECMA-262定义的只是这门语言的基础，而在此基础之上可以构建更完善的脚本语言。我们常见的web浏览器只是ECMAScript实现可能的宿主环境之一。宿主环境不仅提供基本的ECMAScript实现，同时也提供该语言的扩展，以便语言与环境之间对接交互。而这些扩展——如DOM，则利用ECMAScript的核心类型和语法提供更多更具体的功能，以便实现针对环境的操作。其他宿主环境包括node和Adobe Flash。ECMA-262包含内容
-    * 语法
-    * 类型
-    * 语句
-    * 关键字
-    * 保留字
-    * 操作符
-    * 对象
-    * ECMAScript就是对实现该标准规定的各个方面内容的语言描述。javascript实现了ECMAScript，Adobe ActionScript同样也实现了ECMAScript
+    + 由ECMA-262定义的ECMAScript与web浏览器没有依赖关系。实际上这门语言本身不包含输入输出的定义。ECMA-262定义的只是这门语言的基础，而在此基础之上可以构建更完善的脚本语言。我们常见的web浏览器只是ECMAScript实现可能的宿主环境之一。宿主环境不仅提供基本的ECMAScript实现，同时也提供该语言的扩展，以便语言与环境之间对接交互。而这些扩展——如DOM，则利用ECMAScript的核心类型和语法提供更多更具体的功能，以便实现针对环境的操作。其他宿主环境包括node和Adobe Flash。ECMA-262包含内容
+    + 语法
+    + 类型
+    + 语句
+    + 关键字
+    + 保留字
+    + 操作符
+    + 对象
+    + ECMAScript就是对实现该标准规定的各个方面内容的语言描述。javascript实现了ECMAScript，Adobe ActionScript同样也实现了ECMAScript
   3. ECMAScript兼容
-    * 支持ECMA-262描述的所有“类型，值，对象，属性，函数以及程序句法和语义”
-    * 支持Unicode字符标准
-    * 添加ECMA-262没有描述的“更多类型，值，对象，属性和函数”。ECMA-262所说的这些新增特性，主要是该标准中没有规定新的对象和对象的新属性。
-    * 支持ECMA-262没有定义的“程序和正则表达式语法”（也就是说，可以修改和扩展内置的正则表达式语法）
+    + 支持ECMA-262描述的所有“类型，值，对象，属性，函数以及程序句法和语义”
+    + 支持Unicode字符标准
+    + 添加ECMA-262没有描述的“更多类型，值，对象，属性和函数”。ECMA-262所说的这些新增特性，主要是该标准中没有规定新的对象和对象的新属性。
+    + 支持ECMA-262没有定义的“程序和正则表达式语法”（也就是说，可以修改和扩展内置的正则表达式语法）
   4. 文档对象模型（DOM）
-    * 文档对象模型（DOM，document object model）是针对XML但经过扩展用于HTML的应用程序编程接口（API，application Programming InterFace）。DOM把整个页面映射为一个多层节点的结构。HTML或XML页面中的每个组成部分都是某种类型的节点，这些节点又包含着不同类型的数据。
+    + 文档对象模型（DOM，document object model）是针对XML但经过扩展用于HTML的应用程序编程接口（API，application Programming InterFace）。DOM把整个页面映射为一个多层节点的结构。HTML或XML页面中的每个组成部分都是某种类型的节点，这些节点又包含着不同类型的数据。
     
     
 
