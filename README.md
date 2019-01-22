@@ -45,6 +45,39 @@
       * SMIL（Synchronized Multimedia Integration Lanuage，同步多媒体集成语言）
       * 还有一些语言也开发了自己的DOM实现，例如Mozilla 的XUL（XML User Interface Lanuage ，XML用户界面语言）但是，只有上面列出的几种语言是W3C推荐的标准。
     + web浏览器对DOM的支持
+      * 再DOM标准出现了一段时间之后，Web浏览器才开始实现它。
+   5. 浏览器对象模型（BOM）
+   ---
+    + 从根本上讲，BOM只处理浏览器窗口和框架；但人们习惯上也把所有针对浏览器得javascript扩展算作BOM得一部分，
+      * 弹出新浏览器窗口得功能
+      * 移动，缩放和关闭浏览器窗口得功能
+      * 提供浏览器详细信息得navigator
+      * 提供浏览器所加载页面得详细信息得location对象
+      * 提供用户显示器分辨率详细信息得screen对象
+      * 对cookies得支持
+      * 像XMLHttpRequest 和IE的ActiveXObject这样的自定义对象
+      * 注意： 由于没有BOM标准可以遵循，因此每个浏览器都有自己的实现虽然也存在一些事实标准。例如：要有window对象和navigation对象等，但每个浏览器都会以这两个对象乃至其他对象定义属于自己的属性和方法。现在有了HTML5，BOM实现的细节有望朝着兼容性越来越高的方向发展。
+    6. JavaScript版本
+    ---
+      
+    7.  小结
+    ---
+      + JavaScript是一门专门与网页交互而设计的脚本语言，由三部分组成
+        * ECMAScript 由ECMA-262 定义提供核心语言功能
+        * 文档对象模型（DOM），提供访问和操作网页内容的方法和接口
+        * 浏览器对象模型（BOM），提供与浏览器交互的方法和接口你
+ 
+ 
+##### 二，在HTML中使用JavaScript
+    1. 《script》元素
+    ---
+      + 向HTML页面中插入JavaScript的主要方法，就是使用《script》元素。这个元素由Netscape创造并在Netscape Navigator 2 中首先实现。后来，这个元素被加入到正式的HTML规范中。
+        * async： 可选。表示应该立即下载脚本，但不应妨碍页面中的其他操作，比如下载其他资源或等待加载其他脚本。只对外部脚本文件有效
+        * charset： 可选，表示通过src属性指定代码的字符集。由于大多浏览器会忽略它的值，因此这个属性很少有人用
+        * defer 可选。表示脚本可以延迟到文档完全被解析和显示之后再执行。只对外部脚本文件有效。IE7及更早版本对嵌入脚本也支持这个属性
+        * language 已废弃。原来你用于表示编写代码使用脚本语言（如JavaScript，JavaScript1.2或VBScript ）大多数浏览器会忽略这个属性。因此也没有必要再用了
+        * src： 可选 表示包含要执行代码的外部文件。
+        * type ： 可选。可以看成是language 的替代属性。表示编写代码使用脚本语言的内容类型（也称为MIME类型），
     
     
     
